@@ -6,3 +6,6 @@ Clone repo - git clone git@github.com:DZhirutin/lesson13.git
 
 
 Запустить - ansible-playbook -i hosts  aws.yaml
+
+
+Открыть в браузере - http://your-ip-address:8080/hello-1.0
