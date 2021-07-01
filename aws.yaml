@@ -13,7 +13,7 @@
       security_group: ansible_securitygroup     # Name for SecureGroup
 
   tasks:
-  - name: Create secure group with port 22 and 80 open 0.0.0.0/0
+  - name: Create secure group with port 22,80,443,8080 open 0.0.0.0/0
     ec2_group:
       name: "{{security_group}}"
       description: Secure group for Servers with port 22,80,443,8080
@@ -22,7 +22,7 @@
         - proto: tcp
           from_port: 22
           to_port: 22
-          cidr_ip: 149.62.52.67/32
+          cidr_ip: 0.0.0.0/0
         - proto: tcp
           from_port: 80
           to_port: 80
